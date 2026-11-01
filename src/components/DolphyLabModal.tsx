@@ -39,6 +39,7 @@ import {
   transmitRfSignalChirp
 } from '../utils/dolphyEngine';
 import { TV_BRANDS_DATABASE } from '../utils/tvRemoteDatabase';
+import { IrTimingDebuggerPanel } from './IrTimingDebuggerPanel';
 
 interface DolphyLabModalProps {
   isOpen: boolean;
@@ -378,7 +379,7 @@ export const DolphyLabModal: React.FC<DolphyLabModalProps> = ({
             }`}
           >
             <Tv className="w-3.5 h-3.5" />
-            <span>Infrared (.IR Studio)</span>
+            <span>Infrared & Timing 38kHz Debug</span>
           </button>
 
           <button
@@ -1043,6 +1044,12 @@ export const DolphyLabModal: React.FC<DolphyLabModalProps> = ({
                   </div>
                 </div>
               </div>
+
+              {/* Real-Time IR Pulse Timing Debugger & 38kHz Browser Audio Noise Analyzer */}
+              <IrTimingDebuggerPanel
+                preset={selectedIrPreset}
+                onDownloadIr={handleDownloadIrFile}
+              />
             </div>
           )}
 
