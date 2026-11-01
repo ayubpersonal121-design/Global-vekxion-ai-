@@ -1,0 +1,6 @@
+{
+  "name": "Global Pixel Ads AI",
+  "description": "Apex-tier generative AI mirroring Google Gemini & ChatGPT for conversational intelligence, advertising strategies, full-stack web apps, and code engineering.",
+  "requestFramePermissions": ["usb"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

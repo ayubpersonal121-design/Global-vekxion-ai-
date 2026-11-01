@@ -1,0 +1,6 @@
+# VEXION AI - Public Robots.txt for Google Search & Chrome
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: /sitemap.xml
